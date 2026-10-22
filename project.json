@@ -1,0 +1,131 @@
+{
+  "title": "Spring Lakeside Farm",
+  "type": "web",
+  "file": "index.html",
+  "version": 1,
+  "contentrating": "Everyone",
+  "description": "A living 8-bit spring farm. Day and night, drifting cloud shadows, villagers, farm animals and pets that wander, work, eat and drink together. Inspired by classic farming games; every pixel is drawn by code. AI disclosure: this wallpaper was created with the help of AI (Claude, by Anthropic), which wrote the code that draws and animates everything.",
+  "tags": [
+    "Relaxing"
+  ],
+  "general": {
+    "properties": {
+      "schemecolor": {
+        "order": 0,
+        "text": "ui_browse_properties_scheme_color",
+        "type": "color",
+        "value": "0.2 0.3 0.2"
+      },
+      "showpeople": {
+        "order": 1,
+        "text": "Show villagers",
+        "type": "bool",
+        "value": true
+      },
+      "showlivestock": {
+        "order": 2,
+        "text": "Show farm animals (cow, pig, sheep, chickens)",
+        "type": "bool",
+        "value": true
+      },
+      "showpets": {
+        "order": 3,
+        "text": "Show pets (cats and dog)",
+        "type": "bool",
+        "value": true
+      },
+      "showclouds": {
+        "order": 4,
+        "text": "Cloud shadows",
+        "type": "bool",
+        "value": true
+      },
+      "showwind": {
+        "order": 5,
+        "text": "Wind, chimney smoke and petals",
+        "type": "bool",
+        "value": true
+      },
+      "mouseinteraction": {
+        "order": 6,
+        "text": "Animals react to the mouse (needs mouse input on)",
+        "type": "bool",
+        "value": true
+      },
+      "timemode": {
+        "order": 7,
+        "text": "Time of day",
+        "type": "combo",
+        "value": "clock",
+        "options": [
+          {
+            "label": "Follow my computer's clock",
+            "value": "clock"
+          },
+          {
+            "label": "Dawn",
+            "value": "dawn"
+          },
+          {
+            "label": "Daytime",
+            "value": "day"
+          },
+          {
+            "label": "Dusk",
+            "value": "dusk"
+          },
+          {
+            "label": "Night",
+            "value": "night"
+          }
+        ]
+      },
+      "timespeed": {
+        "order": 8,
+        "text": "Fast-forward the day (simulated minutes per second, 0 = real time)",
+        "type": "slider",
+        "value": 0,
+        "min": 0,
+        "max": 60,
+        "step": 1
+      },
+      "fps": {
+        "order": 9,
+        "text": "Frame rate",
+        "type": "combo",
+        "value": "30",
+        "options": [
+          {
+            "label": "20 FPS (lightest)",
+            "value": "20"
+          },
+          {
+            "label": "30 FPS",
+            "value": "30"
+          },
+          {
+            "label": "60 FPS",
+            "value": "60"
+          }
+        ]
+      },
+      "scalemode": {
+        "order": 10,
+        "text": "Scaling",
+        "type": "combo",
+        "value": "fill",
+        "options": [
+          {
+            "label": "Fill the screen (trims the edges a little)",
+            "value": "fill"
+          },
+          {
+            "label": "Pixel-perfect (whole-number scale, green borders)",
+            "value": "fit"
+          }
+        ]
+      }
+    }
+  },
+  "preview": "preview.gif"
+}

@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "wallpaper",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "8123", "--bind", "127.0.0.1", "--directory", "C:/Users/Soranut/Documents/stardew-wallpaper"],
+      "port": 8123
+    }
+  ]
+}

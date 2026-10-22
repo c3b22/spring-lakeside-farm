@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Spring Lakeside Farm</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  html, body { margin: 0; height: 100%; background: #5f9a3c; overflow: hidden; }
+  body { display: flex; align-items: center; justify-content: center; }
+  /* in a plain browser the area outside the wallpaper is a checker, so the real edge is obvious */
+  body.guides { background: repeating-conic-gradient(#2b2b30 0% 25%, #222226 0% 50%) 50% / 24px 24px; }
+  canvas { image-rendering: pixelated; image-rendering: crisp-edges; display: block; }
+  #guides { position: fixed; pointer-events: none; display: none; box-shadow: 0 0 0 2px #ff2e9a, 0 0 0 5px rgba(0,0,0,.55); font: 11px/1.2 ui-monospace, Consolas, monospace; }
+  #guides .tb { position: absolute; left: 0; right: 0; bottom: 0; border-top: 2px dashed #00e0ff; color: #fff; text-shadow: 0 0 2px #000, 0 0 3px #000;
+    background: repeating-linear-gradient(135deg, rgba(0,200,255,.38) 0 7px, rgba(0,90,160,.38) 7px 14px); }
+  #guides .tb span { position: absolute; right: 6px; top: 2px; }
+  #guides .tag { position: absolute; left: 0; top: -22px; background: #ff2e9a; color: #fff; padding: 3px 7px; white-space: nowrap; }
+  #guides .c { position: absolute; width: 14px; height: 14px; border: 0 solid #ff2e9a; }
+  #guides .c.tl { left: -6px; top: -6px; border-width: 3px 0 0 3px; } #guides .c.tr { right: -6px; top: -6px; border-width: 3px 3px 0 0; }
+  #guides .c.bl { left: -6px; bottom: -6px; border-width: 0 0 3px 3px; } #guides .c.br { right: -6px; bottom: -6px; border-width: 0 3px 3px 0; }
+  #guides.grid { background-image: linear-gradient(rgba(255,255,255,.22) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.22) 1px, transparent 1px); background-size: var(--tile) var(--tile); }
+  #guides .box { position: absolute; border: 2px solid #ff2e9a; box-sizing: border-box; }
+</style>
+</head>
+<body>
+<canvas id="c" width="640" height="400"></canvas>
+<div id="guides"><div class="tag"></div><div class="c tl"></div><div class="c tr"></div><div class="c bl"></div><div class="c br"></div><div class="tb"><span>TASKBAR: hidden by Windows</span></div></div>
+<script src="src/engine.js"></script>
+<script src="src/palette.js"></script>
+<script src="src/buildings.js"></script>
+<script src="src/props.js"></script>
+<script src="src/actors.js"></script>
+<script src="src/pets.js"></script>
+<script src="src/animals.js"></script>
+<script src="src/nav.js"></script>
+<script src="src/ambient.js"></script>
+<script src="src/chars.js"></script>
+<script src="src/agents.js"></script>
+<script src="src/scene.js"></script>
+<script src="src/main.js"></script>
+</body>
+</html>
