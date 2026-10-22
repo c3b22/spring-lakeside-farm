@@ -6,6 +6,8 @@ farm animals and pets that wander, and mouse interaction.
 
 Made with the help of AI (Claude, by Anthropic), which wrote the code that draws and animates everything.
 
+Live demo: https://c3b22.github.io/spring-lakeside-farm/ (follows your computer clock; add `?time=12:00` to pick a time, `?guides=0` to hide the preview frame).
+
 ## Run it
 
 Serve the folder over HTTP and open `index.html` (for example `python -m http.server 8123`).
